@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* css-color-font-variable */
+:root {
+    --primary-light: #FCE6EA;
+    --primary-light-hover: #FBD9DF;
+    --primary-light-active: #F7B0BD;
+    --primary-normal: #E4012B;
+    --primary-normal-hover: #CD0127;
+    --primary-normal-active: #B60122;
+    --primary-dark: #AB0120;
+    --primary-dark-hover: #89011A;
+    --primary-dark-active: #670013;
+    --primary-darker: #50000F;
+
+    --dark-light: #A8A7A9;
+    --dark-light-hover: #969598;
+    --dark-light-active: #818083;
+    --dark-normal: #3D3B40;
+    --dark-normal-hover: #343236;
+    --dark-normal-active: #2D2B2F;
+    --dark-dark: #151516;
+    --dark-dark-hover: #0F0F10;
+    --dark-dark-active: #070607;
+
+    --surface-white: #FFFFFF;
+    --surface-white-hover: #FCFDFD;
+    --surface-white-active: #F5F7F9;
+    --surface-light: #FCFDFD;
+    --surface-light-hover: #F5F7F9;
+    --surface-light-active: #F0F3F6;
+    --surface-normal: #F9FAFB;
+    --surface-normal-hover: #F2F4F7;
+    --surface-normal-active: #EBEEF2;
+    --surface-dark: #F6F8F9;
+
+    --gray-white: #FFFFFF;
+    --gray-white-hover: #F8F8F8;
+    --gray-white-active: #E7E7E7;
+    --gray-light: #F8F8F8;
+    --gray-light-hover: #E7E7E7;
+    --gray-light-active: #DADADA;
+    --gray-normal: #F0F0F0;
+    --gray-normal-hover: #DEDEDE;
+    --gray-normal-active: #CDCDCD;
+    --gray-dark: #E9E9E9;
+
+    --primary-font: "Albert Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--primary-font);
+}
+
+.wrapperY {
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+/* Scroll-bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-light-hover);
+    border-radius: 24px;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 42px;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: normal;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: normal;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: normal;
+}
+
+h6 {
+    font-size: 22px;
+    line-height: normal;
+}
+
+.large2 {
+    font-size: 20px;
+    line-height: normal;
+}
+
+.large {
+    font-size: 18px;
+    line-height: normal;
+}
+
+p {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.base {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.small {
+    font-size: 14px;
+    line-height: normal;
+}
+
+.x-small {
+    font-size: 12px;
+    line-height: normal;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--dark-dark);
+}
+
+.text-link {
+    color: var(--primary-normal);
+}
+
+/* badge */
+.bg-featured {
+    padding: 4px 10px;
+    color: var(--primary-normal);
+    border: 1px solid var(--primary-normal);
+    background-color: var(--primary-light);
+    font-weight: 400;
+    height: fit-content;
+    border-radius: 12px;
+}
+.bg-promoted {
+    padding: 4px 10px;
+    color: #5856D6;
+    border: 1px solid #5856D6;
+    background-color: #F0F0FF;
+    font-weight: 400;
+    height: fit-content;
+    border-radius: 12px;
+}
+
+.active-badge{
+    font-size: 12px;
+    color: var(--surface-white);
+    background-color: #18C343;
+    padding: 6px 12px;
+    border-radius: 32px;
+    margin-left: 4px;
+}
+.active-badge-small{
+    font-size: 12px;
+    color: #18C343;
+    background-color: #effbf2;
+    border: 1px solid #18C343;
+    padding: 3px 12px;
+    border-radius: 32px;
+    margin-left: 4px;
+}
+.expire-badge-small{
+    font-size: 12px;
+    color: #c31818;
+    background-color: #ffeeee;
+    border: 1px solid #c31818;
+    padding: 3px 12px;
+    border-radius: 32px;
+    margin-left: 4px;
+}
+.interested-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    color: var(--dark-light-active);
+}
+
+.interested-btn:hover {
+    color: var(--primary-normal) !important;
+    border: none !important;
+}
+
+.interested-btn-icon {
+    width: 32px;
+    font-size: 14px;
+    height: 32px;
+    border: 1px solid var(--dark-light);
+    background-color: var(--surface-white-active);
+    border-radius: 32px;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+.interested-btn-icon:hover{
+    color: var(--surface-white);
+    border: 1px solid var(--primary-normal);
+    background-color: var(--primary-normal);
+}
+
+.interested-btn:hover .interested-btn-icon {
+    background-color: var(--primary-normal) !important;
+    color: var(--surface-white);
+    border: none;
+}
+
+/* default-button & Secondary Button */
+
+.red-btn {
+    font-weight: 500;
+    color: var(--surface-white) !important;
+    background-color: var(--primary-normal);
+    padding: 8px 16px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    line-height: 16px;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.red-btn:hover {
+    background-color: var(--primary-normal-hover);
+    color: var(--surface-whites);
+}
+
+
+.dark-btn{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--surface-white) !important;
+    background-color: var(--dark-dark);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 32px;
+    line-height: 16px;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.dark-btn:hover {
+    background-color: var(--dark-dark-hover);
+    color: var(--surface-whites);
+}
+
+.border-btn{
+    font-weight: 400;
+    color: var(--dark-dark) !important;
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 1px solid var(--dark-dark);
+    font-size: 14px;
+    border-radius: 32px;
+    line-height: 16px;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.choose-btn{
+    font-weight: 400;
+    color: var(--dark-dark) !important;
+    background-color: transparent;
+    padding: 14px 16px;
+    border: 1px solid var(--dark-dark);
+    font-size: 14px;
+    border-radius: 32px;
+    line-height: 16px;
+    text-align: center;
+    transition: all 0.50s;
+}
+
+.choose-btn:hover{
+    background-color: var(--dark-dark);
+    color: var(--surface-white) !important;
+}
+
+.wrapper {
+    padding: 42px 0px;
+}
+
+
+.right-border{
+    border-right: 1px solid var(--gray-light-hover) !important;
+}
+
+
+.select-date-btn{
+    border-radius: 0.365rem;
+    height: 58px;
+    max-width: 307px;
+    min-width: 250px;
+    text-align: left;
+    background-color: var(--surface-white) !important;
+    border: 1px solid var(--gray-light-hover);
+    color: var(--dark-dark);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+}
+
+.dropdown-btn:hover, .btn.show, .dropdown-btn:focus{
+    background-color: var(--surface-white) !important;
+    border: 1px solid var(--gray-light-hover);
+    color: var(--dark-dark) !important;
+}
+
+.dropdown-item{
+    font-size: 14px;
+}
+.dateRangeMenu.show{
+    width: 100%;
+}
+
+.daterangepicker{
+    right: auto;
+    position: absolute;
+    left: 37% !important;
+    top: 45% !important;
+    z-index: 9999 !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+}
+.daterangepicker .drp-buttons .btn-primary{
+    background-color: var(--p400);
+    color: var(--white);
+    border: none;
+    font-weight: 400;
+    font-family: var(--main-font);
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Vibrant Auction</title>
+
+    <!-- BootStrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    
+    <custom-header></custom-header>
+
+    <div class="container">
+        <section class="hero-search">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="text-white m-0 mb-1 fw-bold">Welcome To Vibrant Auction</h1>
+                <p class="text-white fw-medium large2">Buy properties at more than 10%-30% discount</p>
+                <div class="search-box">
+                    <div class="form-floating">
+                        <select class="form-select select2" id="floatingSelectCity"
+                            aria-label="Floating label select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelectCity">City</label>
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select select2" id="floatingSelectBank"
+                            aria-label="Floating label select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelectBank">Institutional/Bank Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select select2" id="floatingSelectTye"
+                            aria-label="Floating label select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelectTye">Asset Type</label>
+                    </div>
+                    <button class="btn hero-search-btn"><i class="bi bi-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="usp wrapperY">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="usp-box m-3-mob">
+                        <img src="assets/usp1.svg" alt="">
+                        <p class="large2 m-0 fw-semibold">Residential Properties</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-box m-3-mob">
+                        <img src="assets/ups2.svg" alt="">
+                        <p class="large2 m-0 fw-semibold">Commercial Properties</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-box m-3-mob">
+                        <img src="assets/usp3.svg" alt="">
+                        <p class="large2 m-0 fw-semibold">Vehicle</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-box">
+                        <img src="assets/usp4.svg" alt="">
+                        <p class="large2 m-0 fw-semibold">Plant/Machinery</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </div>
+
+    <div class="container-fluid upcoming-properties">
+        <section class="wrapperY">
+            <div class="container">
+                <div class="section-title d-flex align-items-center justify-content-between">
+                    <h3 class="fw-semibold m-0">Upcoming Auction Properties</h3>
+                    <a href="#" class="fw-medium text-link"><span class="text-decoration-underline">View All</span> <i
+                            class="bi bi-arrow-right-short"></i></a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/default-property-img.svg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img class="w-100 img-fluid" src="assets/propert-img.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 property-card">
+                            <div class="card-img-top">
+                                <div class="card-tag">
+                                    <span class="badge bg-featured">Featured</span>
+                                    <button class="interested-btn-icon"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <img src="assets/default-property-img.svg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="assest-date-row">
+                                    <span class="asset-type small">Land & Building</span>
+                                    <span class="date small"><i class="bi bi-calendar"></i> 12th Dec, 2023</span>
+                                </div>
+                                <p class="fw-bold large m-0">Property ID: 58630</p>
+                                <p class="small m-0 property-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Consectetur, laboriosam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <p class="small m-0 fw-medium"><i class="bi bi-geo-alt"></i> Land in Medinipore, West
+                                    Bengal</p>
+                                <p class="m-0 fw-bold large2 property-price">₹ 15,50,00,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <custom-footer></custom-footer>
+    <!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="js/select2.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+@import url('./designSystem.css');
+
+@media screen and (max-width: 1200px) {
+    .hero-search {
+        padding: 52px;
+    }
+
+    .hero-search .hero-content .search-box {
+        flex-direction: column;
+    }
+    .package-row .package-row-col, .property-card-col{
+        width: 50% !important;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-cta-btn {
+        flex-direction: column;
+        gap: 12px;
+        align-items: start !important;
+    }
+    .section-title h3{
+        font-size: 24px;
+    }
+    footer .footer-top{
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+    }
+    footer .footer-middle{
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+    }
+    .contact-row{
+        flex-direction: column;
+        gap: 24px;
+        align-items: start
+    }
+    .contact-row .col-md-7, .col-md-5{
+        width: 100%;
+    }
+    .contact-point-row{
+        flex-direction: column;
+        gap: 0px;
+        align-items: start
+    }
+    .contact-point-row .detail-point{
+        padding: 12px 0px;
+        border-right: none !important;
+    }
+    .contact-point-row:last-child{
+        margin: 0px !important;
+    }
+    .property-detail-section{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .property-detail-section .col-md-8 , .property-detail-section .col-md-4{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 180px;
+    }
+
+    .m-3-mob {
+        margin-bottom: 16px;
+    }
+    .login-img{
+        display: none;
+    }
+    .form-section{
+        height: 100vh;
+    }
+    .registration-header{
+        margin-top: 42px;
+    }
+    .property-deatails-bottom{
+        display: none !important;
+    }
+    .property-details-top{
+        border: none !important;
+    }
+    .property-details-top p{
+        margin-bottom: 0px !important;
+    }
+    .detail-point-row{
+        flex-direction: column;
+    }
+    .right-border{
+        border-right: none !important;
+    }
+    .details-section{
+        border: none !important;
+    }
+    .detail-point{
+        border-bottom: 1px solid var(--gray-light-hover) !important;    
+    }
+    .gallery-row{
+        flex-direction: row !important;
+    }
+    .pb-mob{
+        padding-bottom: 16px !important;
+    }
+    .property-details-bottom-mob{
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .dataTables_wrapper .dataTables_length {
+        float:left !important;
+        align-items: start;
+    }
+    .dataTables_wrapper .dataTables_filter input{
+        height: 31px !important;
+    }
+    /* .dataTables_wrapper .dataTables_paginate {
+        width: 34% !important;
+    } */
+    .property-header .property-details-top h3{
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hero-search {
+        padding: 32px;
+    }
+
+    .hero-search .hero-content h1 {
+        font-size: 32px;
+    }
+    .section-title h3{
+        font-size: 18px;
+    }
+    .package-row .package-row-col, .property-card-col{
+        width: 100% !important;
+        margin-bottom: 24px;
+    }
+    .modal-content .modal-body .payment-details{
+        flex-direction: column;
+    }
+    .modal-content .modal-body .payment-details .package-pricing, .modal-content .modal-body .payment-details .package-details{
+        width: 100%;
+    }
+    .upgrade-view{
+        flex-direction: column;
+        align-items: start;
+    }
+    .upgrade-view p{
+        width: 100% !important;
+    }
+    .package-name-row{
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .my-data-table{
+        padding: 16px !important;
+    }
+    table.dataTable tbody td{
+        font-size: 12px !important;
+    }
+    .property-header .property-details-top h3{
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-search {
+        padding: 32px;
+    }
+    footer{
+        padding: 42px;
+    }
+    footer .footer-middle .footer-col{
+        flex-direction: column;
+        gap: 12px;
+    }
+    footer .footer-logo{
+        max-width: 240px;
+    }
+
+    .hero-search .hero-content h1 {
+        font-size: 28px;
+    }
+    footer .footer-bottom{
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+    }
+    footer .footer-bottom p{
+        text-align: left;
+    }
+    .form-section .login-form, .registration-section{
+        width: 95%;
+    }
+    .dataTables_filter{
+        float: left !important;
+        margin-bottom: 16px !important;
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .section-title h3{
+        font-size: 16px;
+    }
+}
