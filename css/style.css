@@ -847,6 +847,7 @@ table.dataTable tbody td {
     gap: 10px;
     transition: all 0.75s;
     cursor: pointer;
+    box-shadow: 0px 4px 10px #00000020;
 }
 
 .filter-bar .filter-bar-row{
@@ -857,4 +858,39 @@ table.dataTable tbody td {
 .slider-value{
     font-size: 12px;
     padding: 4px 8px;
+}
+#more-filters-btn{
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    #input_group_hidden {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #input_group_hidden.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #more-filters-btn {
+        display: block !important;
+    }
+}
+
+/* Optional: Always show #input_group_hidden on large screens */
+@media (min-width: 992px) {
+    #input_group_hidden {
+        display: flex !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    #more-filters-btn {
+        display: none !important;
+    }
 }

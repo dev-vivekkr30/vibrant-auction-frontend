@@ -76,3 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showStep(1);
 });
 
+
+const input_group_hidden = document.querySelectorAll('#input_group_hidden');
+    
