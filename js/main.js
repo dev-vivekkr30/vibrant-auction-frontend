@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const step2 = document.getElementById('step-2');
     const nextBtn = document.getElementById('nextBtn');
     const prevBtn = document.getElementById('prevBtn');
+    const iconBox = document.getElementById('eye-btn');
     let currentStep = 1;
 
     function showStep(step) {
@@ -51,8 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!input.checkValidity()) {
                 input.classList.add('is-invalid');
                 valid = false;
+                iconBox.classList.add('eye-btn-danger');
             } else {
                 input.classList.remove('is-invalid');
+                iconBox.classList.remove('eye-btn-danger');
             }
         });
         return valid;

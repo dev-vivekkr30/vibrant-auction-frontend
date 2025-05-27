@@ -150,6 +150,9 @@
     .property-details-bottom-mob{
         display: flex !important;
     }
+    .login-section .login-form{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 640px) {

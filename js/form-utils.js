@@ -4,6 +4,7 @@
 export function enableBootstrapValidation() {
     const forms = document.querySelectorAll('.needs-validation');
     const iconBox = document.getElementById('eye-btn');
+    const iconBoxDanger = document.querySelectorAll('.danger-btn');
     forms.forEach(form => {
         form.addEventListener('submit', function (event) {
             if (!form.checkValidity()) {
@@ -12,6 +13,9 @@ export function enableBootstrapValidation() {
             }
             form.classList.add('was-validated');
             iconBox.classList.add('eye-btn-danger');
+            iconBoxDanger.forEach(icon => {
+                icon.classList.add('eye-btn-danger');
+            })
         }, false);
     });
 }

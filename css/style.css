@@ -484,7 +484,7 @@ table.dataTable tbody td {
 }
 .detail-point-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 12px;
     color: var(--dark-dark-active);
@@ -893,4 +893,22 @@ table.dataTable tbody td {
     #more-filters-btn {
         display: none !important;
     }
+}
+
+.clickable-row:hover {
+    background-color: #f0f0f0;
+}
+
+
+.h-banner{
+    height: 160px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 12px;
+}
+
+
+.eye-btn-danger {
+    border: 1px solid #dc3545 !important;
+    border-left: none !important;
 }
